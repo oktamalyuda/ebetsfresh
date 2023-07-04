@@ -37,6 +37,14 @@ function onLogin() {
   } else {
     alert("Terima Kasih Pesan Anda Sedang Di Kirim ke Admin");
   }
+
+  let pesanButton = document.getElementById("pesanButton");
+
+function Pesan() {
+  console.log(pesanButton.value);
+  if (pesanButton.value == "") {
+    alert("Terima Kasih Telah Belanja di Tempat kami");
+  }
 }
 
 // carousell
