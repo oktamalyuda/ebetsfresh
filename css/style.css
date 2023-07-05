@@ -247,40 +247,89 @@ button:hover {
 
 /* product */
 
-.product {
-  padding: 90px;
+#popular-product {
+  margin: 80px auto;
+  padding: 100px 7% 5px;
 }
 
-.product h2 {
+.product-heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.5px;
   text-align: center;
-  font-size: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.product .row {
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+  margin: 40px 0;
+}
+.product-box {
+  width: 100%;
+  border: 5px solid #b8ffc6;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  flex-direction: column;
+  position: relative;
+}
+.product-box img {
+  width: 90%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
+}
+.product-box strong {
+  color: #202020;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.product-box .quantity {
+  color: #949494;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.product-box .price {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #393939;
+}
+.product-box .cart-btn {
+  width: 95%;
+  height: 40px;
+  background-color: #ecf7ee;
+  color: #4eb060;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: all ease 0.3s;
+  border: 5px solid #b8ffc6;
+  border-radius: 20px;
 }
-
-.product .row .product-card {
+.product-box .cart-btn i {
   text-align: center;
-  margin-bottom: 40px;
 }
-
-.product .row .product-card img {
-  border-radius: 50%;
-  width: 80%;
+.product-box .cart-btn:hover {
+  background-color: #4eb060;
+  color: #ffffff;
+  transition: all ease 0.3s;
 }
-
-.product .row .product-card .product-card-tittle {
-  margin: 20px auto 10px;
-  font-size: 20px;
-}
-
-.product-card-price {
-  font-size: 20px;
+.product-box .like-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  color: #4eb060;
+  font-size: 1.3rem;
 }
 
 /* closing */
